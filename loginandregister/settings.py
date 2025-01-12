@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-2)&esiwo_1k$b!@y+@nwxcax3a#e!o_vdewzl*cz)v)6st4ymc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['loginandregister.herokuapp.com']
+ALLOWED_HOSTS = ['loginandregister.onrender.com']
 
 
 
@@ -120,7 +120,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
-
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 

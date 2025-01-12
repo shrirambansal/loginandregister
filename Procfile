@@ -1,1 +1,1 @@
-web: gunicorn loginandregister.wsgi
+web: gunicorn loginandregister.wsgi application
