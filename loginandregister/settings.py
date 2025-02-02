@@ -17,6 +17,8 @@ from vercel_edge_config import get
 
 DATABASE_URL = get("DATABASE_URL") 
 
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -30,9 +32,9 @@ SECRET_KEY = 'django-insecure-2)&esiwo_1k$b!@y+@nwxcax3a#e!o_vdewzl*cz)v)6st4ymc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['loginandregister.onrender.com']
+ALLOWED_HOSTS = ['loginandregister-ten.vercel.app']
 
-
+CSRF_TRUSTED_ORIGINS = ['https://loginandregister.onrender.com']
 
 # Application definition
 
@@ -84,7 +86,7 @@ WSGI_APPLICATION = 'loginandregister.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(default='postgres://localhost')
+    'default': dj_database_url.config(default='postgresql://neondb_owner:npg_XjEsHbW31euF@ep-dark-band-a5tm7uct-pooler.us-east-2.aws.neon.tech/neondb?sslmode=require')
 }
 
 
